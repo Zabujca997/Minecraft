@@ -1,0 +1,338 @@
+##################################################
+##                                              ##
+##  _____ _    _ _____  _____ _                 ##
+## / ____| |  | |_   _|/ ____| |                ##
+##| |  __| |  | | | | | (___ | |__   ___  _ __  ##
+##| | |_ | |  | | | |  \___ \| '_ \ / _ \| '_ \ ##
+##| |__| | |__| |_| |_ ____) | | | | (_) | |_) |##
+## \_____|\____/|_____|_____/|_| |_|\___/| .__/ ##
+##                                       | |    ##
+##                                       |_|    ##
+##################################################
+
+
+
+##################################################
+#             Looking for Item Names?            #
+##################################################
+#           https://tinyurl.com/okqdcvo          #
+##################################################
+
+## Tag in chat before text in chat from shop. e.g [GUIShop] Purchase Successful.
+prefix: '[&cSklep&f]'
+
+## Command used to open shop, DON'T PUT A /
+buy-commands: 
+    - 'buy'
+    - 'shop'
+    - 'sklep'
+
+## Command to open sell inventory, DON'T PUT A /
+sell-commands:
+    - 'sell'
+    - 'sprzedaj'
+
+## Register the commands
+## if set to false, you must do '/guishopuser buy' instead of '/buy'
+register-commands: true
+
+############ Language settings ###############
+
+#No permission message
+no-permission: '&cNo Permission!'
+
+#Disabled world message
+disabled-world: '&cSklep nie działa w tym świecie!'
+
+#Use the escape key to close the shop instead of the back button.
+escape-only: true
+
+#Rightclick an item in the shop to open an alternate sell GUI
+alternate-sell-enable: true
+
+#The message for the amount you lose, E.G Cost, Or Price
+cost: '&7Cena'
+
+#The message for the amount you get back AKA. Sell or Returned
+return: '&7Sprzedaj'
+
+#The 1st line of the message on shop items
+line1: '&8Aby sprzedać, kliknij przedmiot w swoim inventory.'
+
+#The 2nd line of the message on shop items
+line2: '&6Musi być taka sama ilość!'
+
+#The 3rd line of the message on shop items
+line3: 'Kliknij, aby kupić ilość'
+
+#The 4th line of the message on shop items
+line4: 'Shift + kliknij, aby kupić 1 przedmiot'
+
+#The text back button in the shops
+back: '&cPowrót'
+
+#The item the back button will be!
+back-button-item: 'RED_STAINED_GLASS_PANE'
+
+#The messaged displayed before the item amount.
+
+purchased: '&fDokonano zakupu i &c$'
+
+## The second message displayed when you purchase an item.
+
+## E.G 54$ Taken from your account.
+taken: '&f został pobrany z twojego konta.'
+
+##  The words displayed before the amount needed.
+not-enough-pre: '&fPotrzebujesz &c$'
+
+## The words displayed AFTER the amount needed.
+not-enough-post: '&f kupić to!'
+
+## Text displayed before item name.
+sold: '&fTwoje przedmioty zostały sprzedane i &a$'
+
+##Second message when buying, Words AFTER the amount
+## E.G 54$ "Added to your account"
+added: '&f został dodany do Twojego konta.'
+
+#When something magical goes wrong?
+something-wrong: '&fCoś poszło nie tak, skontaktuj się z administratorem.'
+
+#Message displayed when a player tries to sell blocks not matching the quantity.
+in-stacks: '&fProszę sprzedawać w stosach &c'
+
+#Message when a player cannot sell a certain item.
+#{count} can be used to display the amount of non sellable, returned items.
+cant-sell: '&f({count}) przedmiot (y) nie zostały sprzedane i wróciły do twojego ekwipunku.'
+
+#Message when a player cannot buy a certain item.
+cant-buy: '&fPrzepraszamy, nie możesz kupić tego przedmiotu.'
+
+#When a player has a full inventory
+full-inventory: '&cOpróżnij swój ekwipunek!'
+
+#The currency symbol
+currency: '$'
+
+#The suffix after the currency. E.G Dollars. Yen, etc.
+currency-suffix: ''
+
+#The title of a sign that players can click to open shop
+sign-title: '&8[&cSklep&8]'
+
+#Do want players to be able to access the shop ONLY using the sign? 
+signs-only: false
+
+signs-only-message: '&cYou can only access the shop by clicking a [&cGUIShop&f] sign!'
+
+#Menu row count
+menu-rows: 3
+
+#Enable sound on purchase
+enable-sound: true
+
+#Purchase sound effect (You can find them here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html)
+purchase-sound: 'ENTITY_PLAYER_LEVELUP'
+
+#Enable in-game creator.
+ingame-config: true
+
+#Enable dynamic pricing
+dynamic-pricing: false
+
+#Enable DEBUG mode
+debug-mode: false
+
+#The overall shop menu title
+menu-title: "Menu"
+
+#The title of a specific shop inventory
+shop-title: "Menu &f> &r{shopname}"
+
+#The title of the sell inventory
+sell-title: "Menu &f> &rSprzedaj"
+
+#The title of the quantity inventory.
+qty-title: "&4Wybierz Kwotę"
+
+#The title of the alternate sell GUI, if enabled
+alt-sell-title: "Menu &f> &rSprzedaj"
+
+access-to: "&aDostęp do poleceń:"
+
+buy-lore: "&fKup: &c{amount}"
+
+sell-lore: "&fSprzedaj: &c{amount}"
+
+free-lore: "&fKup: &aZA DARMO"
+
+cannot-buy: "&cNie można kupić"
+
+cannot-sell: "&cNie można sprzedać"
+
+forward-page-button-name: "&rNastępna strona"
+
+backward-page-button-name: "&rPoprzednia strona"
+
+#Used in the alternate sell GUI
+alt-sell-indicator-material: 'GOLD_INGOT'
+
+alt-sell-add-material: 'GREEN_STAINED_GLASS_PANE'
+alt-sell-remove-material: 'RED_STAINED_GLASS_PANE'
+
+alt-sell-quantity-1: 1
+alt-sell-quantity-2: 32
+alt-sell-quantity-3: 64
+
+alt-sell-confirm-material: 'EMERALD_BLOCK'
+alt-sell-cancel-material: 'REDSTONE_BLOCK'
+
+alt-sell-confirm-name: '&a&lPotwierdź'
+alt-sell-cancel-name: '&c&lAnuluj'
+
+alt-sell-not-enough: '&cNie masz {amount} takie przedmioty do sprzedaży.'
+
+DisabledWorlds:
+    -'Test'
+
+## Items to disable quantity stacking. 
+## This will force these items to only have
+## a quantity of 1. Good for swords, armor, etc.
+##
+## This is an item SEARCH. Meaning it is not the full item name.
+## E.G CHESTPLATE blocks ALL chestplates because all items contain
+## the word CHESTPLATE.
+disabled-qty-items:
+    - "CHESTPLATE"
+    - "LEGGINGS"
+    - "BOOTS"
+    - "HELMET"
+    - "BOW"
+    - "FISHING_ROD"
+    - "SHEARS"
+    - "NAME_TAG"
+    - "SWORD"
+    - "AXE"
+    - "PICKAXE"
+    - "SHOVEL"
+    - "SPADE"
+    - "HOE"
+    - "LEAD"
+    - "LEASH"
+    - "HORSE_ARMOR"
+    - "SADDLE"
+    - "BARDING"
+
+##Menu Items
+Rows: 3
+
+menu-items:
+  Pane0:
+    Type: 'DUMMY'
+    Item: 'BLUE_STAINED_GLASS_PANE'
+  Pane1:
+    Type: 'DUMMY'
+    Item: 'RED_STAINED_GLASS_PANE'
+  Pane2:
+    Type: 'DUMMY'
+    Item: 'BLUE_STAINED_GLASS_PANE'
+  Pane3:
+    Type: 'DUMMY'
+    Item: 'RED_STAINED_GLASS_PANE'
+  Pane4:
+    Type: 'DUMMY'
+    Item: 'BLUE_STAINED_GLASS_PANE'
+  Pane5:
+    Type: 'DUMMY'
+    Item: 'RED_STAINED_GLASS_PANE'
+  Pane6:
+    Type: 'DUMMY'
+    Item: 'BLUE_STAINED_GLASS_PANE'
+  Pane7:
+    Type: 'DUMMY'
+    Item: 'RED_STAINED_GLASS_PANE'
+  PaneCornerRight:
+    Type: 'DUMMY'
+    Item: 'BLUE_STAINED_GLASS_PANE'
+  Pane8:
+    Type: 'DUMMY'
+    Item: 'RED_STAINED_GLASS_PANE'
+  Raiding:
+    Type: 'SHOP'
+    Enabled: true
+    Item: 'TNT'
+    Desc: '&8(&cMechanizmy!&8)'
+    Name: '&4RedStone'
+  Ores:
+    Type: 'SHOP'
+    Enabled: true
+    Item: 'EMERALD'
+    Desc: '&8(&fRudy&8)'
+    Name: '&aRudy'
+  FarmingDrops:
+    Type: 'SHOP'
+    Enabled: true
+    Item: 'WHEAT_SEEDS'
+    Desc: '&8(&fFarma&8)'
+    Name: '&eFarma i nasiona'
+  Brewing:
+    Type: 'SHOP'
+    Enabled: true
+    Item: 'EXPERIENCE_BOTTLE'
+    Desc: '&8(&fAlchemia&8)'
+    Name: '&2Magiczne picia'
+  Gear:
+    Type: 'SHOP'
+    Enabled: true
+    Item: 'DIAMOND_HELMET'
+    Desc: '&8(&fZbroje&8)'
+    Name: '&bWalka i obrona'
+  Spawners:
+    Type: 'SHOP'
+    Enabled: true
+    Item: 'SPAWNER'
+    Desc: '&8(&fSpawnery&8)'
+    Name: '&6Moby w klatkach'
+  Blocks:
+    Type: 'SHOP'
+    Enabled: true
+    Item: 'STONE'
+    Desc: '&8(&fBloki&8)'
+    Name: '&6Bloki'
+  Pane9:
+    Type: 'DUMMY'
+    Item: 'RED_STAINED_GLASS_PANE'
+  PaneCornerBottomLeft:
+    Type: 'DUMMY'
+    Item: 'BLUE_STAINED_GLASS_PANE'
+  Pane10:
+    Type: 'DUMMY'
+    Item: 'RED_STAINED_GLASS_PANE'
+  Pane11:
+    Type: 'DUMMY'
+    Item: 'BLUE_STAINED_GLASS_PANE'
+  Pane12:
+    Type: 'DUMMY'
+    Item: 'RED_STAINED_GLASS_PANE'
+  Pane13:
+    Type: 'DUMMY'
+    Item: 'BLUE_STAINED_GLASS_PANE'
+  Pane14:
+    Type: 'DUMMY'
+    Item: 'RED_STAINED_GLASS_PANE'
+  Pane15:
+    Type: 'DUMMY'
+    Item: 'BLUE_STAINED_GLASS_PANE'
+  Pane16:
+    Type: 'DUMMY'
+    Item: 'RED_STAINED_GLASS_PANE'
+  Pane17:
+    Type: 'DUMMY'
+    Item: 'BLUE_STAINED_GLASS_PANE'
+
+ ################################
+ ## Developed by pablo67340    ##
+ ## If you need any support    ##
+ ## https://discord.gg/v7D6pCm ##
+ ################################
